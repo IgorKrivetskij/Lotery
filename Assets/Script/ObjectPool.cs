@@ -43,4 +43,14 @@ public class ObjectPool : MonoBehaviour
         _ithemsInPool.Remove(ithem);
         return ithem.GetComponent< IthemMoovement>();
     }
+
+    public int GetIthemCount()
+    {
+        return _ithemCount;
+    }
+
+    public GameObject GetObjectFromPool(int index)
+    {
+        return _ithemsInPool[index];
+    }
 }
